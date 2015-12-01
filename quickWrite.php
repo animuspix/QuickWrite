@@ -1,19 +1,14 @@
 <?php
 
-    $targetCounter;
-
-    $escapeArray = array("`", "|", "^", "*", "/", "~", "-", "<", ">", "+");
-    $escapeCharCodes = array("&#96;", "&#124;", "&#94;", "&#42;", "&#47;", "&#126;", "&#45;", "&lt;", "&gt;", "&#43;");
-
     function target($charConvert) {
         
-        global $escapeArray,
-               $escapeCharCodes;
+        $targetCounter;
+        $escapeArray = array("`", "|", "^", "*", "/", "~", "-", "<", ">", "+");
+        $escapeCharCodes = array("&#96;", "&#124;", "&#94;", "&#42;", "&#47;", "&#126;", "&#45;", "&lt;", "&gt;", "&#43;");
         
         for ($targetCounter = 0; $targetCounter < count($escapeArray); $targetCounter += 1)
             if ($charConvert === $escapeArray[$targetCounter]) {
                 return $escapeCharCodes[$targetCounter];
-                //return "e";
             }
     }
 
@@ -119,7 +114,7 @@
                 $escapeCount = 0;
             }
 
-            if ($currentChar !== "_" and $currentChar !== "*" and $currentChar !== "/" and $currentChar !== "-" and $currentChar !== "`" and $currentChar !== "~" and $currentChar !== "|" and $currentChar !== "^" and $currentChar !== "<" and $currentChar !== ">") {
+            if ($currentChar !== "_" and $currentChar !== "*" and $currentChar !== "/" and $currentChar !== "-" and $currentChar !== "`" and $currentChar !== "~" and $currentChar !== "|" and $currentChar !== "^" and $currentChar !== "<" and $currentChar !== ">" and $currentChar !== "+") {
                 array_push($textArray, $currentChar);
             }
         }
