@@ -1,5 +1,5 @@
 # QuickWrite
-A simple markup language, inspired by MarkDown. Tired of writing angle brackets and long element titles? Now you can include quickWrite.php, and write everything in nice, clean text documents.
+A simple formatting language, inspired by MarkDown. Tired of writing angle brackets and long element titles? Now you can include quickWrite.php, and write everything in nice, clean text documents.
 
 ## How does it work?
 
@@ -26,8 +26,7 @@ Converts to:
 <h3>QuickWritten</h3>
 <p><u>Hi! (underlined)</u> <strong><em>this</em></strong> was <strike>written</strike> cobbled together in *QuickWrite*, <br> a nice little language used on <a href="http://miettia.com">miettia.com</a> in my blog</p>
 
-All tags have to be closed, unless their HTML equivalents close themselves. As you might have guessed, QuickWrite is much faster to write
-than HTML - it takes 1/3rd as much text at the very most. Unlike markdown (a layout-focussed language), QuickWrite is designed for quick and easy formatting and may be extended towards layout later on.
+All tags have to be closed, unless their HTML equivalents close themselves. As you might have guessed, QuickWrite is much faster to write than HTML - it takes 1/3rd as much text at the very most. Unlike markdown (a layout-focussed language), QuickWrite is designed for quick and easy formatting and may be extended towards layout later on.
 
 ## How-To
 
